@@ -16,12 +16,13 @@ public class EjemploStringTestRendimientoConcat {
                 .append(b)
                 .append("\n");
     }
-
+System.gc(); //Limpiar las instancias que no se esten utilizando. libera memoria que ya no está siendo utilizada por el programa, es decir, la memoria ocupada por objetos que ya no tienen referencias activas.
 
     long fin = System.currentTimeMillis();
     System.out.println(fin - inicio);
         System.out.println("c = " + c);
         System.out.println("sb = " + sb);
+        System.exit(0);
 
 
     }
